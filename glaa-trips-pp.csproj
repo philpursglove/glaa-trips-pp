@@ -5,6 +5,7 @@
         <MvcRazorCompileOnPublish>true</MvcRazorCompileOnPublish>
         <UserSecretsId>2c60ba46-afab-4624-a16f-10b57f28ae51</UserSecretsId>
         <ApplicationInsightsResourceId>/subscriptions/efba6594-a9ab-43b2-bcfe-18abd8c3b464/resourceGroups/rg-glaa/providers/microsoft.insights/components/appi-glaa-trips</ApplicationInsightsResourceId>
+        <TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>
     </PropertyGroup>
 
     <ItemGroup>
@@ -17,4 +18,20 @@
         <PackageReference Include="SkiaSharp" Version="1.59.1" />
         <PackageReference Include="WebEssentials.AspNetCore.CdnTagHelpers" Version="1.0.10" />
     </ItemGroup>
+
+    <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+      <TypeScriptTarget>ES5</TypeScriptTarget>
+      <TypeScriptJSXEmit>React</TypeScriptJSXEmit>
+      <TypeScriptModuleKind />
+      <TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
+      <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
+      <TypeScriptRemoveComments>False</TypeScriptRemoveComments>
+      <TypeScriptOutFile />
+      <TypeScriptOutDir />
+      <TypeScriptGeneratesDeclarations>False</TypeScriptGeneratesDeclarations>
+      <TypeScriptNoEmitOnError>True</TypeScriptNoEmitOnError>
+      <TypeScriptSourceMap>True</TypeScriptSourceMap>
+      <TypeScriptMapRoot />
+      <TypeScriptSourceRoot />
+    </PropertyGroup>
 </Project>
