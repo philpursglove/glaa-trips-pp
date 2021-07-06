@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
     <PropertyGroup>
-        <TargetFramework>netcoreapp2.0</TargetFramework>
+        <TargetFramework>netcoreapp2.1</TargetFramework>
         <MvcRazorCompileOnPublish>true</MvcRazorCompileOnPublish>
         <UserSecretsId>2c60ba46-afab-4624-a16f-10b57f28ae51</UserSecretsId>
         <ApplicationInsightsResourceId>/subscriptions/efba6594-a9ab-43b2-bcfe-18abd8c3b464/resourceGroups/rg-glaa/providers/microsoft.insights/components/appi-glaa-trips</ApplicationInsightsResourceId>
