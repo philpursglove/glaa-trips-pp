@@ -45,7 +45,6 @@ namespace glaa_trips_pp
 
             services.AddWebOptimizer(pipeline =>
             {
-                pipeline.TranspileJavaScriptFiles();
                 pipeline.CompileScssFiles();
             });
             services.AddApplicationInsightsTelemetry(Configuration["APPINSIGHTS_CONNECTIONSTRING"]);
